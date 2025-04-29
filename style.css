@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: url('wedding-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+  }
+  
+  .invitation {
+    padding: 100px 20px 40px;
+    color: #5a3e36;
+  }
+  
+  .names {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #a0522d;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .delay1 { animation-delay: 1s; }
+  .delay2 { animation-delay: 2s; }
+  .delay3 { animation-delay: 3s; }
+  .delay4 { animation-delay: 4s; }
+  .delay5 { animation-delay: 5s; }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  .rsvp-container {
+    background-color: rgba(255,255,255,0.85);
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  form input, form select, form textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-family: inherit;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .wishes-section {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #wishes-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #wishes-list li {
+    margin: 10px 0;
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 10px;
+  }
+  
