@@ -1,5 +1,12 @@
 const form = document.getElementById("rsvp-form");
 const wishesList = document.getElementById("wishes-list");
+const rsvpButton = document.getElementById("rsvp-button");
+const rsvpFormSection = document.getElementById("rsvp-form-section");
+
+rsvpButton.addEventListener("click", function() {
+  // Show the RSVP form when the button is clicked
+  rsvpFormSection.style.display = "block";
+});
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();

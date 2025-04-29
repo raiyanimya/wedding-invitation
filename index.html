@@ -25,7 +25,11 @@
       <h1>Adrian & Janet</h1>
       <p>Saturday, 30 December 2023<br>Imperial Hotel Kuching</p>
 
-      <div class="form-section">
+      <!-- RSVP button to show form -->
+      <button id="rsvp-button">Sahkan Kehadiran</button>
+
+      <!-- RSVP form section, initially hidden -->
+      <div class="form-section" id="rsvp-form-section" style="display: none;">
         <h2>Kindly RSVP</h2>
         <form id="rsvp-form">
           <input type="text" id="name" placeholder="Your Name" required />
@@ -39,12 +43,13 @@
           <button type="submit">Send RSVP</button>
         </form>
       </div>
-
-      <div class="wishes">
-        <h3>Guest Wishes</h3>
-        <ul id="wishes-list"></ul>
-      </div>
     </div>
+  </div>
+
+  <!-- Guest wishes section -->
+  <div class="wishes">
+    <h3>Guest Wishes</h3>
+    <ul id="wishes-list"></ul>
   </div>
 
   <script src="script.js"></script>
