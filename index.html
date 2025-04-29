@@ -3,40 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wedding Invitation</title>
+  <title>Adrian & Janet's Wedding</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="WEDDING_INVITATION_CARD.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Background music -->
   <audio id="bg-music" autoplay loop>
-    <source src="wedding-song.mp3" type="audio/mpeg">
+    <source src="wedding-song.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
 
-  <div class="invitation">
-    <h1 class="fade-in">You Are Cordially Invited</h1>
-    <h2 class="fade-in delay1">To the Wedding of</h2>
-    <h1 class="names fade-in delay2">Adrian & Janet</h1>
-    <p class="fade-in delay3">Saturday, 30 December 2023<br>Imperial Hotel Kuching</p>
-  </div>
+  <!-- Overlay content -->
+  <div class="overlay">
+    <div class="content">
+      <h1>Adrian & Janet</h1>
+      <p>Saturday, 30 December 2023<br>Imperial Hotel Kuching</p>
 
-  <div class="rsvp-container fade-in delay4">
-    <h2>Kindly RSVP</h2>
-    <form id="rsvp-form">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <select id="attendance" required>
-        <option value="">Will you attend?</option>
-        <option value="Yes">Yes, I'll attend</option>
-        <option value="No">Sorry, can't attend</option>
-      </select>
-      <input type="number" id="guests" placeholder="Number of attendees" min="1" />
-      <textarea id="wish" placeholder="Leave a wish for the couple"></textarea>
-      <button type="submit">Send RSVP</button>
-    </form>
-  </div>
+      <div class="form-section">
+        <h2>Kindly RSVP</h2>
+        <form id="rsvp-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <select id="attendance" required>
+            <option value="">Will you attend?</option>
+            <option value="Yes">Yes, I'll attend</option>
+            <option value="No">Sorry, can't attend</option>
+          </select>
+          <input type="number" id="guests" placeholder="Number of attendees" min="1" />
+          <textarea id="wish" placeholder="Leave a wish for the couple"></textarea>
+          <button type="submit">Send RSVP</button>
+        </form>
+      </div>
 
-  <div class="wishes-section fade-in delay5">
-    <h3>Guest Wishes</h3>
-    <ul id="wishes-list"></ul>
+      <div class="wishes">
+        <h3>Guest Wishes</h3>
+        <ul id="wishes-list"></ul>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
